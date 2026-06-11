@@ -3,7 +3,6 @@ import { useState } from "react";
 export default function FavoriteColor() {
   const [isAzul, setIsAzul] = useState(true);
 
-  // Mapeia os estados para classes CSS do W3.CSS
   const classeCorTexto = isAzul ? "w3-text-blue" : "w3-text-red";
   const classeCorBotao = isAzul ? "w3-btn w3-blue" : "w3-btn w3-red";
   const nomeCor = isAzul ? "Azul" : "Vermelho";

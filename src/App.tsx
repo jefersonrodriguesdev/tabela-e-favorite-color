@@ -13,21 +13,20 @@ function App() {
       <Carroussel />
 
       <div style={{ padding: "20px" }}>
-        <Hello nome="Jeferson" />
         
         <hr style={{ margin: "30px 0", borderColor: "#444" }} />
 
-        <h2>Exercício 2: Favorite Color</h2>
+        <h2>Favorite Color</h2>
         <FavoriteColor />
 
         <hr style={{ margin: "30px 0", borderColor: "#444" }} />
 
-        <h2>Exercício 1 e 3: Tabela de Produtos (Carga via JSON)</h2>
+        <h2>Tabela de Produtos</h2>
         <TabelaProdutos />
 
         <hr style={{ margin: "30px 0", borderColor: "#444" }} />
 
-        <h2>Componentes Anteriores (Cards e Contador)</h2>
+        <h2>Cards e Contador</h2>
         <div style={{ display: "flex", justifyContent: "center", gap: "15px", flexWrap: "wrap", margin: "20px 0" }}>
           <ListaCards />
         </div>
