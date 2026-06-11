@@ -1,17 +1,9 @@
 export default function Menu() {
   return (
-    <nav style={{
-      backgroundColor: "#111",
-      padding: "15px",
-      display: "flex",
-      justifyContent: "center",
-      gap: "20px",
-      borderRadius: "8px",
-      marginBottom: "20px"
-    }}>
-      <a href="#home" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>Início</a>
-      <a href="#produtos" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>Produtos</a>
-      <a href="#sobre" style={{ color: "#fff", textDecoration: "none", fontWeight: "bold" }}>Sobre</a>
-    </nav>
+    <div className="w3-bar w3-black w3-card">
+      <a href="#home" className="w3-bar-item w3-button w3-padding-large">Início</a>
+      <a href="#produtos" className="w3-bar-item w3-button w3-padding-large">Produtos</a>
+      <a href="#sobre" className="w3-bar-item w3-button w3-padding-large w3-hide-small">Sobre</a>
+    </div>
   );
 }

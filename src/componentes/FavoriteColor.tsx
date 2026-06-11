@@ -1,31 +1,21 @@
 import { useState } from "react";
 
 export default function FavoriteColor() {
-  // Estado booleano para controlar se é azul ou não
   const [isAzul, setIsAzul] = useState(true);
 
-  // Define os valores dinamicamente com base no estado
-  const corAtual = isAzul ? "blue" : "red";
+  // Mapeia os estados para classes CSS do W3.CSS
+  const classeCorTexto = isAzul ? "w3-text-blue" : "w3-text-red";
+  const classeCorBotao = isAzul ? "w3-btn w3-blue" : "w3-btn w3-red";
   const nomeCor = isAzul ? "Azul" : "Vermelho";
 
   return (
-    <div style={{ margin: "20px", padding: "15px", border: "1px dashed #555", borderRadius: "8px" }}>
-      {/* Descrição com a cor da letra dinâmica */}
-      <p style={{ color: corAtual, fontWeight: "bold", fontSize: "1.2em" }}>
-        A cor atual é: {nomeCor}
+    <div className="w3-panel w3-border w3-border-light-grey w3-round w3-padding-16 w3-center" style={{ maxWidth: "400px", margin: "20px auto" }}>
+      <p className={`w3-xlarge ${classeCorTexto}`}>
+        A cor atual é: <b>{nomeCor}</b>
       </p>
-      
-      {/* Botão que muda o estado e herda os estilos dinâmicos */}
       <button 
-        onClick={() => setIsAzul(!isAzul)} 
-        style={{ 
-          backgroundColor: corAtual, 
-          color: "#fff", 
-          border: "none",
-          padding: "10px 20px",
-          cursor: "pointer",
-          borderRadius: "5px"
-        }}
+        className={`${classeCorBotao} w3-round w3-ripple`}
+        onClick={() => setIsAzul(!isAzul)}
       >
         Mudar para {isAzul ? "Vermelho" : "Azul"}
       </button>
