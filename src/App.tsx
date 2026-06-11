@@ -13,6 +13,7 @@ function App() {
       <Carroussel />
 
       <div style={{ padding: "20px" }}>
+        <Hello nome="Jeferson" />
         
         <hr style={{ margin: "30px 0", borderColor: "#444" }} />
 
